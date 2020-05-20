@@ -1,0 +1,15 @@
+.form {
+  border-radius: 15px;
+  box-shadow: 17px 1px 63px -5px rgba(89, 145, 207, 0.38);
+  background-color: #ffffff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

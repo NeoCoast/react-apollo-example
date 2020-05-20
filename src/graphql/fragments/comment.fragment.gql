@@ -1,0 +1,9 @@
+#import "GraphQL/fragments/user.fragment.gql"
+
+fragment CommentData on Comment {
+  id
+  body
+  user {
+    ...UserData
+  }
+}

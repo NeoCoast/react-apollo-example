@@ -1,0 +1,7 @@
+mutation SignOutUser {
+  signOut(input: {}) {
+    user {
+      id
+    }
+  }
+}

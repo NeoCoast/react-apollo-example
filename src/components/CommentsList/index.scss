@@ -1,0 +1,41 @@
+.comments-list {
+  margin: 15px 0 0  68px;
+
+  &__submit-btn {
+    margin-top: 20px;
+    align-self: flex-end;
+    min-width: 136px;
+    min-height: 40px;
+    font-size: 16px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: calc(100% - 40px);
+    }
+  }
+
+  &__trigger {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    outline: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__count {
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+
+    span {
+      margin: 0 5px 3px 0;
+    }
+  }
+}

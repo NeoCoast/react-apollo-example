@@ -1,0 +1,20 @@
+.button {
+  background-color: #0864ff;
+  border-radius: 30px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: bold;
+  min-height: 52px;
+  min-width: 200px;
+  outline: none;
+  text-align: center;
+  transition: opacity 200ms linear;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+}

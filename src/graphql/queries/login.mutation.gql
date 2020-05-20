@@ -1,0 +1,10 @@
+#import "GraphQL/fragments/user.fragment.gql"
+
+mutation SignInUser($credentials: SignInInput!) {
+  signIn(input: $credentials) {
+    user {
+      ...UserData,
+      authenticationToken
+    }
+  }
+}

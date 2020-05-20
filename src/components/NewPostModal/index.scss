@@ -1,0 +1,49 @@
+.new-post-modal {
+  &__header {
+    align-items: center;
+    border-bottom: 1px solid #ceecff;
+    display: flex;
+    height: 40px;
+    justify-content: flex-end;
+    padding: 0 10px;
+    transition: opacity 200ms linear;
+
+    svg {
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      border-radius: 12px;
+      border: solid 1px transparent;
+      box-shadow: 9px 7px 41px 0 rgba(80, 123, 171, 0.24);
+      margin-bottom: 20px;
+      outline: none;
+      transition: border 200ms linear;
+
+      &:focus {
+        border: solid 1px #0864ff;
+      }
+    }
+
+    textarea {
+      padding: 10px 20px;
+      resize: none;
+    }
+  }
+}

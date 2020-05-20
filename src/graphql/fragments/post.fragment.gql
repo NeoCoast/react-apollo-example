@@ -1,0 +1,15 @@
+#import "GraphQL/fragments/user.fragment.gql"
+#import "GraphQL/fragments/comment.fragment.gql"
+
+fragment PostData on Post {
+  title
+  body
+  id
+  createdAt
+  user {
+    ...UserData
+  }
+  comments {
+    ...CommentData
+  }
+}

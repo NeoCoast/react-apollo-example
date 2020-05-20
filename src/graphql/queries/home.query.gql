@@ -1,0 +1,18 @@
+#import "GraphQL/fragments/post.fragment.gql"
+#import "GraphQL/fragments/user.fragment.gql"
+
+query Home($cursor: String) {
+  me {
+    ...UserData
+  }
+  posts(after: $cursor, first: 10) {
+    totalCount
+    nodes {
+      ...PostData
+    }
+    pageInfo {
+      hasNextPage
+      endCursor
+    }
+  }
+}

@@ -1,0 +1,12 @@
+#import "GraphQL/fragments/comment.fragment.gql"
+
+mutation CreateComment($input: CreateCommentInput!) {
+  createComment(input: $input) {
+    comment {
+      ...CommentData
+      post {
+        id
+      }
+    }
+  }
+}

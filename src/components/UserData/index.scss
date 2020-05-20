@@ -1,0 +1,87 @@
+.user-data {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 17px 1px 63px -5px rgba(89, 145, 207, 0.38);
+  color: #3b475b;
+  display: flex;
+  flex-direction: column;
+  left: 40px;
+  padding: 20px 10px;
+  position: fixed;
+  top: 69px;
+  width: 221px;
+
+  &__name {
+    font-size: 21px;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: capitalize;
+  }
+
+  &__email {
+    opacity: 0.6;
+    font-size: 16px;
+    color: #3b475b;
+    margin-top: 5px;
+  }
+
+  &__divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  &__new-post {
+    min-width: 136px;
+    min-height: 40px;
+    font-size: 16px;
+    z-index: 2;
+  }
+
+  &__divider {
+    z-index: 1;
+    height: 1px;
+    width: calc(100% + 20px);
+    background: #ceecff;
+    position: absolute;
+  }
+
+  &__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  &__title {
+    color: #3b475b;
+    font-size: 18px;
+  }
+
+  &__value {
+    color: #0864ff;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  &__sign-out {
+    align-items: center;
+    color: #3b475b;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    outline: none;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+}

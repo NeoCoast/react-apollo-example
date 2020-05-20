@@ -1,0 +1,46 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px;
+  border-bottom: 1px solid #ceecff;
+  width: 500px;
+
+  &:last-of-type {
+    border-bottom: 1px solid transparent;
+  }
+
+  &__user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    svg {
+      margin-right: 10px;
+    }
+  }
+
+  &__userdata {
+    display: flex;
+    flex-direction: column;
+
+    span:first-of-type {
+      text-transform: capitalize;
+      font-weight: 600;
+    }
+
+    span:last-of-type {
+      color: #3b475b;
+    }
+  }
+
+  &__title,
+  &__body {
+    padding-left: 67px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+}

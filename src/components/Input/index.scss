@@ -1,0 +1,26 @@
+.input {
+  border-radius: 15px;
+  border-width: 1px;
+  border: 1px solid transparent;
+  box-shadow: 9px 7px 41px 0 rgba(80, 123, 171, 0.24);
+  height: 35px;
+  outline: none;
+  padding: 0 20px;
+  transition: border 200ms linear;
+  width: 400px;
+
+  &:focus {
+    border: solid 1px #0864ff;
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 30px;
+  }
+
+  &__label {
+    align-self: flex-start;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #042152;
+  }
+}

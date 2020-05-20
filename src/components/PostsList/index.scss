@@ -1,0 +1,11 @@
+.posts-list {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 17px 1px 63px -5px rgba(89, 145, 207, 0.38);
+  margin: 20px 0;
+  width: fit-content;
+
+  &__pagination-button {
+    margin-bottom: 20px;
+  }
+}
