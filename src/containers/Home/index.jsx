@@ -43,8 +43,7 @@ const Home = ({ history }) => {
 
       setIsOpenNewPostModal(false);
     }
-  }
-  );
+  });
 
   return (
     <Layout>
